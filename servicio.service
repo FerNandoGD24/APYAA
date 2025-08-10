@@ -1,0 +1,12 @@
+[Unit]
+Description=Ejecuta un script antes de apagar el equipo
+DefaultDependencies=no
+Before=shutdown.target
+ 
+[Service]
+Type=oneshot
+ExecStart=/home/usuario/Scripts/mi-script.sh
+TimeoutStartSec=0
+ 
+[Install]
+WantedBy=shutdown.target
