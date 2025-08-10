@@ -4,3 +4,5 @@ cd ~/.config
 chmod +x APYAA.sh
 sudo systemctl daemon-reload
 systemctl enable servicio.service
+cd
+rm -fdr APYAA
