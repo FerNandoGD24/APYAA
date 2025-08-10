@@ -7,7 +7,6 @@ After=network-online.target
 [Service]
 Type=oneshot
 ExecStart=/usr/bin/yay -Syyuu --noconfirm
-ExecStart=/usr/bin/yay -Scc --noconfirm
 RemainAfterExit=yes
 TimeoutStartSec=0
  
