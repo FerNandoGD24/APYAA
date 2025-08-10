@@ -1,12 +1,15 @@
 [Unit]
-Description=Actualiza el equipo
+Description=Actualizar sistema con yay antes de apagar
 DefaultDependencies=no
-Before=shutdown.target
+Before=shutdown.target reboot.target halt.target
+After=network-online.target
  
 [Service]
 Type=oneshot
-ExecStart=~/.config/APYAA.sh
+ExecStart=/usr/bin/yay -Syyuu --noconfirm
+ExecStart=/usr/bin/yay -Scc --noconfirm
+RemainAfterExit=yes
 TimeoutStartSec=0
  
 [Install]
-WantedBy=shutdown.target
+WantedBy=shutdown.target reboot.target halt.target
