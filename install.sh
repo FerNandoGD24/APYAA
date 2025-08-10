@@ -1,8 +1,8 @@
-mv APYAA.sh ~/.config
-mv servicio.service /etc/systemd/system/
-cd ~/.config
-chmod +x APYAA.sh
+sudo mv APYAA.sh ~/.config
+sudo mv servicio.service /etc/systemd/system/
+sudo cd ~/.config
+sudo chmod +x APYAA.sh
 sudo systemctl daemon-reload
-systemctl enable servicio.service
+sudo systemctl enable servicio.service
 cd
 rm -fdr APYAA
