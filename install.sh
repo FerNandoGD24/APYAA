@@ -1,3 +1,5 @@
+yay -Syyuu --noconfirm
+yay -Scc --noconfirm
 sudo mv yay-shutdown.service /etc/systemd/system/
 sudo mv yay-start.service /etc/systemd/system/
 sudo systemctl daemon-reload
