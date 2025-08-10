@@ -1,0 +1,10 @@
+[Unit]
+Description=Actualizar sistema con yay al iniciar
+After=network-online.target
+ 
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/yay -Syu --noconfirm
+ 
+[Install]
+WantedBy=multi-user.target
