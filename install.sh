@@ -5,3 +5,4 @@ sudo systemctl start yay-shutdown.service
 sudo systemctl status yay-shutdown.service
 cd
 rm -fdr APYAA
+cd
